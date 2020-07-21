@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+    </style>
+    <title>Weather App ☀</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="form-row">
+            <div class="col-7">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+              />
+            </div>
+            <div class="col-1">
+              <input class="search-button" type="submit" value="Search" />
+            </div>
+            <div class="col-1" id="current-location-button">
+              <input class="current-button" type="submit" value="Current" />
+            </div>
+          </div>
+        </form>
+
+        <h1 id="city"></h1>
+        <ul>
+          <span class="lighter">
+            <li id="current-time"></li>
+            <li id="description"></li>
+          </span>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <span>
+                <li>💨 Wind = <span id="wind"></span> km/h</li>
+                <br />
+                <li>💧 Humidity = <span id="humidity"></span>%</li>
+                <br />
+                <li>
+                  ⏱ Now = ⬆ <span id="temp-max"></span>° ⬇️
+                  <span id="temp-min"></span>°
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded by Ana Paula Zanibão
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
