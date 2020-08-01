@@ -8,7 +8,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
 
   let currentDay = days[date.getDay()];
@@ -47,6 +47,15 @@ function showWeatherCondition(response) {
   document.querySelector("#temp-min").innerHTML = Math.round(
     response.data.main.temp_min
   );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
@@ -64,9 +73,7 @@ function handleSubmit(event) {
 
 function searchLocation(position) {
   let apiKey = "0503e41c953380663dd93b4d5f81edfb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${
-    position.coords.latitude
-  }&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeatherCondition);
 }
 
