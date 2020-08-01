@@ -51,11 +51,11 @@
 
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
               <div class="float-left">
                  <img src="" alt="" style="width: 90px; height: 90px; float: left;" id="icon">
                 <span class="temperature" id="temperature"></span
-                ><span class="units"><a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link"> °F</a></span>
+                ><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link"> °F</a></span>
               </div>
             </div>
           </div>
@@ -70,10 +70,10 @@
                   ⏱ Now = ⬆ <span id="temp-max"></span>° ⬇️
                   <span id="temp-min"></span>°
                 </li>
-              
             </ul>
           </div>
         </div>
+        <div class="row weather-forecast" id="forecast"></div>
       </div>
     </div>
     <footer>
