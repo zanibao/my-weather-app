@@ -22,7 +22,7 @@
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="form-row">
-            <div class="col-7">
+            <div class="col-8">
               <input
                 type="search"
                 class="form-control"
@@ -53,23 +53,26 @@
           <div class="col-6">
             <div class="clearfix weather-temperature">
               <div class="float-left">
-                 <img src="" alt="" style="width: 90px; height: 90px; float: left;" id="icon">
+                <img
+                  src=""
+                  alt=""
+                  style="width: 90px; height: 90px; float: left;"
+                  id="icon"
+                />
                 <span class="temperature" id="temperature"></span
-                ><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link"> °F</a></span>
+                ><span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link"> °F</a></span
+                >
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
+              <br />
               <span>
                 <li>💨 Wind = <span id="wind"></span> km/h</li>
-                <br />
                 <li>💧 Humidity = <span id="humidity"></span>%</li>
-                <br />
-                <li>
-                  ⏱ Now = ⬆ <span id="temp-max"></span>° ⬇️
-                  <span id="temp-min"></span>°
-                </li>
             </ul>
           </div>
         </div>
@@ -77,7 +80,10 @@
       </div>
     </div>
     <footer>
-      <a href="https://github.com/zanibao/my-weather-app" target="_blank">Open-source code</a> by Ana Paula Zanibão
+      <a href="https://github.com/zanibao/my-weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Ana Paula Zanibão
     </footer>
 
     <script src="src/index.js"></script>

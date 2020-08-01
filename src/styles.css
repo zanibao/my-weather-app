@@ -29,11 +29,11 @@ li {
   border-radius: 10px;
   margin: 20px auto;
   padding: 15px;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .search-button {
-  margin-left: 10px;
+  margin-left: 5px;
   padding: 10px 20px;
   background-color: #18b1a7;
   border-radius: 100px;
@@ -47,7 +47,7 @@ li {
 }
 
 .current-button {
-  margin-left: 75px;
+  margin-left: 70px;
   padding: 10px 20px;
   background-color: #528cc2;
   border-radius: 100px;
@@ -79,7 +79,7 @@ li {
 }
 
 .row {
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 10px;
   position: relative;
 }
 
@@ -96,4 +96,31 @@ footer {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast h3 {
+  color: rgb(165, 167, 167);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 20px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(124, 122, 122);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
